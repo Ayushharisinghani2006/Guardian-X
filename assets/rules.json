@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*://*/*inappropriate*",
+      "resourceTypes": ["main_frame", "sub_frame", "script", "image"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*://*/*violence*",
+      "resourceTypes": ["main_frame", "sub_frame", "script", "image"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*://*/*offensive*",
+      "resourceTypes": ["main_frame", "sub_frame", "script", "image"]
+    }
+  }
+]

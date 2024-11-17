@@ -1,0 +1,58 @@
+{
+  "modelTopology": {
+    "class_name": "Sequential",
+    "config": [
+      {
+        "class_name": "Dense",
+        "config": {
+          "units": 32,
+          "activation": "relu",
+          "input_dim": 5,
+          "use_bias": true,
+          "name": "dense"
+        }
+      },
+      {
+        "class_name": "Dense",
+        "config": {
+          "units": 1,
+          "activation": "sigmoid",
+          "use_bias": true,
+          "name": "dense_1"
+        }
+      }
+    ]
+  },
+  "weightsManifest": {
+    "paths": [
+      "assets/weights.bin"  
+    ],
+    "weights": [
+      {
+        "name": "dense/kernel",
+        "shape": [5, 32],
+        "dtype": "float32"
+      },
+      {
+        "name": "dense/bias",
+        "shape": [32],
+        "dtype": "float32"
+      },
+      {
+        "name": "dense_1/kernel",
+        "shape": [32, 1],
+        "dtype": "float32"
+      },
+      {
+        "name": "dense_1/bias",
+        "shape": [1],
+        "dtype": "float32"
+      }
+    ]
+  },
+  "validation": {
+    "filePathValidation": "Check if 'assets/weights.bin' exists before loading the model.",
+    "modelIntegrityCheck": "Verify that the model topology matches weightsManifest in shape and size.",
+    "inputDimensionConsistency": "Ensure input data has 5 features to match 'input_dim': 5 in the first layer."
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "manifest_version": 3,
+  "name": "AI Protector",
+  "version": "1.0",
+  "description": "AI-powered content filtering, adaptive real-time filtering, and autofill protection with customization.",
+  "permissions": [
+    "storage",
+    "tabs",
+    "scripting",
+    "notifications",
+    "declarativeNetRequest",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "http://localhost:8080/*",
+    "https://chrome-ai.googleapis.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "1",
+        "enabled": true,
+        "path": "assets/rules.json"
+      }
+    ]
+  },
+ "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+},
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/phishing_model.json",
+        "assets/tf.min.js",
+        "output.wasm",
+        "images/icon16.png",
+        "images/icon48.png",
+        "images/icon128.png",
+        "warning.html"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

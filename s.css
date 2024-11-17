@@ -1,0 +1,10 @@
+extension-root/
+├── background.js
+├── content.js
+├── manifest.json
+├── popup.html
+├── rules.json
+└── images/
+    ├── icon16.png
+    ├── icon48.png
+    └── icon128.png
