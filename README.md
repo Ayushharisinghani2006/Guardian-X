@@ -25,7 +25,7 @@ Copy code
 - ### Steps
 1. Clone the repository:
    ```bash
-   git clone <repository-link>
+   git clone https://github.com/Ayushharisinghani2006/AI-PROTECTOR-2024.git
    cd ai-protector
 Load the Chrome extension:
 Open Chrome and navigate to chrome://extensions/.
