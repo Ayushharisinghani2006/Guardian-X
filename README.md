@@ -238,16 +238,7 @@ The `image` folder contains all the visual assets used in the **AI Protector** p
     }
     ```
 
----
 
-### 2. **logo.png**
-- **Purpose**:
-  - Represents the branding of AI Protector.
-  - Can be used in the popup interface or promotional materials.
-- **Recommended Size**:
-  - 256x256 pixels (or scalable vector graphics for flexibility).
-- **Usage**:
-  - Displayed in the extension popup (`popup.html`) or about section.
 
 
 ## Guidelines for Adding New Images
