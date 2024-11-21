@@ -172,16 +172,6 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
             console.warn("Skipping non-HTTP(S) page:", tab.url);
             return; // Skip tabs with unsupported URLs
         }
-
-        setTimeout(() => {
-            chrome.tabs.sendMessage(tabId, { type: "analyzeUrl", url: tab.url }, (response) => {
-                if (chrome.runtime.lastError) {
-                    console.error("Error in sending message to content script:", chrome.runtime.lastError.message);
-                } else {
-                    console.log("Response from content script:", response);
-                }
-            });
-        }, 500);
     }
 });
 
