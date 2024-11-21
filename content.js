@@ -241,5 +241,13 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     }
     return false;
 });
+console.log("Google Search Content Script Loaded");
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+    console.log('Received message:', message);
+    if (message.type === 'analyzeUrl') {
+        console.log('Analyzing URL:', message.url);
+        sendResponse({ message: 'URL analyzed' });
+    }
+});
 
 console.log("Content script injected successfully!");
