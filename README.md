@@ -341,3 +341,5 @@ The `dev_tools` folder includes utilities for simulating backend responses and t
 bash
 Copy code
 npm test
+## License
+AI Protector is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
