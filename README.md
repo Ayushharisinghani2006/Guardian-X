@@ -339,7 +339,7 @@ The `dev_tools` folder includes utilities for simulating backend responses and t
    mvn test
 2.For frontend tests, use a test runner like Jest:
 bash
-Copy code
+Copy codeMIT
 npm test
 ## License
-AI Protector is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+AI Protector is licensed under the MIT License. See the [LICENSE](./MIT LICENSE) file for details.
