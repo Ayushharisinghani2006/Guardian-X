@@ -68,7 +68,7 @@ Advanced user customization options for rules and filters.
 License
 This project is licensed under the MIT License.
 
-# AI Protector Backend
+# Guardian X Backend
 
 ## Introduction
 The backend of **AI Protector** is built using **Java Spring Boot**. It powers the extension by handling AI-based phishing detection, content filtering logic, and user behavior analysis. The backend serves as the central hub for processing data and providing actionable insights to the frontend.
@@ -256,7 +256,7 @@ The `image` folder contains all the visual assets used in the **AI Protector** p
      5. README.md for Frontend
 markdown
 Copy code
-# Frontend (UI) - AI Protector
+# Frontend (UI) - Guardian X
 
 ## Introduction
 The frontend of **AI Protector** is responsible for the user interface, including the popup window and interactions with the backend. The interface displays safety warnings, phishing alerts, content filtering messages, and provides the user with options to manage settings.
@@ -342,4 +342,4 @@ bash
 Copy codeMIT
 npm test
 ## License
-AI Protector is licensed under the MIT License. See the [LICENSE](./MIT LICENSE) file for details.
+Guardian X is licensed under the MIT License. See the [LICENSE](./MIT LICENSE) file for details.
