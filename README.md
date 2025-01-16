@@ -1,4 +1,4 @@
-# AI Protector
+# Guardian X
 
 ## Introduction
 **AI Protector** is an AI-powered Chrome extension designed to secure your browsing experience. It protects against phishing attacks, filters harmful content in real time, and provides tailored safety alerts based on user behavior. With AI Protector, you can browse smarter, safer, and with greater confidence.
